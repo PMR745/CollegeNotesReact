@@ -75,6 +75,30 @@ export const InnerRow = (props) => {
                             }
                         </>
                     )
+                case "Unit-3":
+                    return (
+                        <>
+                            {
+                                dbms3.map(topic => (<Element element={topic} key={topic} />))
+                            }
+                        </>
+                    )
+                case "Unit-4":
+                    return (
+                        <>
+                            {
+                                dbms4.map(topic => (<Element element={topic} key={topic} />))
+                            }
+                        </>
+                    )
+                case "Unit-5":
+                    return (
+                        <>
+                            {
+                                dbms5.map(topic => (<Element element={topic} key={topic} />))
+                            }
+                        </>
+                    )
             }
         }
         else if (props.subjectName === "Web Development") {

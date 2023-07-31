@@ -201,15 +201,53 @@ nav {
     font-size: 25px;
   }
 
+  .sidebar {
+    width: 50px;
+  }
+
+  .sidebar .icons {
+    font-size: 25px;
+  }
+
+  .sidebar .menu {
+    height: 45px;
+    width: 30px;
+  }
+
+  .sidebar .footer img {
+    height: 25px;
+  }
+
   .dept {
     font-size: 22px;
+  }
+
+  .container {
+    width: calc(100vw - 50px);
   }
 
   .accordian {
     font-size: 15px;
   }
 
+  .accordian .subject-name {
+    padding-left: 15px;
+  }
+
+  .accordian .icons {
+    right: 20px;
+  }
+
   .inner-accordian {
     font-size: 13px;
+    padding-left: 30px;
+  }
+
+  .inner-accordian .icons {
+    padding-right: 30px;
+  }
+
+  .innerRow {
+    margin-left: 10%;
   }
 }
