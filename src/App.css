@@ -87,8 +87,8 @@ nav {
   text-decoration: none;
   display: flex;
   overflow: hidden;
-  margin: auto;
-  padding: 2px;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar .menu:hover {
