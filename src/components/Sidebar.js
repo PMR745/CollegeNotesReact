@@ -19,7 +19,7 @@ export const Sidebar = (props) => {
         props.parentCallBack(0)
     }
 
-    if (value == 0) {
+    if (value === 0) {
         return (
             <div className='sidebar'>
                 <div className="menu" onClick={syllabusClick}>
@@ -32,19 +32,24 @@ export const Sidebar = (props) => {
                 </div>
                 <div className="footer">
                     <div className="menu">
-                        <img src="git.png" alt="github" />
-                        <span className="btnName">Github</span>
+                        <a href="https://github.com/PMR745" target="_blank">
+                            <img src="git.png" alt="github" />
+                            <span className="btnName">Github</span>
+                        </a>
                     </div>
+
                     <div className="menu">
-                        <img src="linkedIn.png" alt="LinkedIn" />
-                        <span className="btnName">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/prathamesh-rajput-b75458218/" target="_blank">
+                            <img src="linkedIn.png" alt="LinkedIn" />
+                            <span className="btnName">LinkedIn</span>
+                        </a>
                     </div>
                 </div>
             </div>
         )
     }
 
-    else if (value == 1) {
+    else if (value === 1) {
         return (
             <div className='sidebar'>
                 <div className="menu" onClick={notesClick}>
@@ -57,12 +62,16 @@ export const Sidebar = (props) => {
                 </div>
                 <div className="footer">
                     <div className="menu">
-                        <img src="git.png" alt="github" />
-                        <span className="btnName">Github</span>
+                        <a href="https://github.com/PMR745" target='_blank'>
+                            <img src="git.png" alt="github" />
+                            <span className="btnName">Github</span>
+                        </a>
                     </div>
                     <div className="menu">
-                        <img src="linkedIn.png" alt="LinkedIn" />
-                        <span className="btnName">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/prathamesh-rajput-b75458218/" target='_blank'>
+                            <img src="linkedIn.png" alt="LinkedIn" />
+                            <span className="btnName">LinkedIn</span>
+                        </a>
                     </div>
                 </div>
             </div>
