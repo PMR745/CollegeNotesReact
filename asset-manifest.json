@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/CollegeNotesReact/static/css/main.f0bbea06.css",
+    "main.css": "/CollegeNotesReact/static/css/main.5c3ac431.css",
     "main.js": "/CollegeNotesReact/static/js/main.8872053b.js",
     "static/js/787.426b564e.chunk.js": "/CollegeNotesReact/static/js/787.426b564e.chunk.js",
     "index.html": "/CollegeNotesReact/index.html",
-    "main.f0bbea06.css.map": "/CollegeNotesReact/static/css/main.f0bbea06.css.map",
+    "main.5c3ac431.css.map": "/CollegeNotesReact/static/css/main.5c3ac431.css.map",
     "main.8872053b.js.map": "/CollegeNotesReact/static/js/main.8872053b.js.map",
     "787.426b564e.chunk.js.map": "/CollegeNotesReact/static/js/787.426b564e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0bbea06.css",
+    "static/css/main.5c3ac431.css",
     "static/js/main.8872053b.js"
   ]
 }
