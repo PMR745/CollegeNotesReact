@@ -106,7 +106,7 @@ nav {
   text-decoration: none;
   display: flex;
   overflow: hidden;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
