@@ -237,6 +237,10 @@ nav {
     font-size: 25px;
   }
 
+  .wrapper {
+    background-image: linear-gradient(50deg, rgb(116, 215, 248), #9e2eff, rgb(250, 160, 236));
+  }
+
   .container {
     width: calc(100vw - 50px);
   }

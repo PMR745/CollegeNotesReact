@@ -3,6 +3,7 @@ import { NavBar } from './NavBar'
 import { Container } from './Container'
 import { Sidebar } from './Sidebar'
 import { Syllabus } from './Syllabus'
+import { Papers } from './Papers'
 
 
 export const Home = () => {
@@ -26,6 +27,15 @@ export const Home = () => {
             <div>
                 <NavBar />
                 <Syllabus />
+                <Sidebar parentCallBack={handleCallBack} />
+            </div>
+        )
+    }
+    else if (page === 2) {
+        return (
+            <div>
+                <NavBar />
+                <Papers />
                 <Sidebar parentCallBack={handleCallBack} />
             </div>
         )

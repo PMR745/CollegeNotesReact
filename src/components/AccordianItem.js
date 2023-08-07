@@ -37,4 +37,17 @@ export const AccordianItem = (props) => {
             </div>
         )
     }
+    else if (props.page === 2) {
+        return (
+            <div className='accordianItem'>
+                <div className="inner-accordian" ref={parentRef}>
+                    <Row unitName="DBMS" page={props.page} subjectName={props.subjectName} />
+                    <Row unitName="Web Development" page={props.page} subjectName={props.subjectName} />
+                    <Row unitName="SEPM" page={props.page} subjectName={props.subjectName} />
+                    <Row unitName="Cloud Computing" page={props.page} subjectName={props.subjectName} />
+                    <Row unitName="Compiler Design" page={props.page} subjectName={props.subjectName} />
+                </div>
+            </div>
+        )
+    }
 }

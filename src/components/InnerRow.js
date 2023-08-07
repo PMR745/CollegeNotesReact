@@ -278,4 +278,9 @@ export const InnerRow = (props) => {
             }
         }
     }
+    else if (props.page === 2) {
+        return (
+            <Element element="Comming Soon" />
+        )
+    }
 }
