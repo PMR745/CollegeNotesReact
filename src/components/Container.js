@@ -5,6 +5,7 @@ import { useEffect, useRef } from 'react'
 
 export const Container = () => {
     const pageNo = 0;
+    // Animation Function
     const parentRef = useRef(null);
 
     useEffect(() => {

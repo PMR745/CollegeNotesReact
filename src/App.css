@@ -46,7 +46,7 @@ nav {
   position: absolute;
   right: 0;
   top: 50px;
-  height: calc(100vh - 50px);
+  height: calc(100% - 50px);
   padding-top: 13px;
   width: 80px;
   transition: all 0.2s linear;
@@ -119,6 +119,7 @@ nav {
 
 .wrapper {
   background-image: linear-gradient(to right, rgb(116, 215, 248), #9e2eff, rgb(250, 160, 236));
+  min-height: calc(100vh - 50px);
 }
 
 
@@ -128,7 +129,6 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: calc(100vh - 50px);
   width: calc(100vw - 90px)
 }
 
