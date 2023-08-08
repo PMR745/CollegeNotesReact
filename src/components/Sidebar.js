@@ -37,14 +37,14 @@ export const Sidebar = (props) => {
                 </div>
                 <div className="footer">
                     <div className="menu">
-                        <a href="https://github.com/PMR745" target="_blank">
+                        <a href="https://github.com/PMR745" target="_blank" rel="noreferrer">
                             <img src="git.png" alt="github" />
                             <span className="btnName">Github</span>
                         </a>
                     </div>
 
                     <div className="menu">
-                        <a href="https://www.linkedin.com/in/prathamesh-rajput-b75458218/" target="_blank">
+                        <a href="https://www.linkedin.com/in/prathamesh-rajput-b75458218/" target="_blank" rel="noreferrer">
                             <img src="linkedIn.png" alt="LinkedIn" />
                             <span className="btnName">LinkedIn</span>
                         </a>
@@ -67,13 +67,13 @@ export const Sidebar = (props) => {
                 </div>
                 <div className="footer">
                     <div className="menu">
-                        <a href="https://github.com/PMR745" target='_blank'>
+                        <a href="https://github.com/PMR745" target='_blank' rel="noreferrer">
                             <img src="git.png" alt="github" />
                             <span className="btnName">Github</span>
                         </a>
                     </div>
                     <div className="menu">
-                        <a href="https://www.linkedin.com/in/prathamesh-rajput-b75458218/" target='_blank'>
+                        <a href="https://www.linkedin.com/in/prathamesh-rajput-b75458218/" target='_blank' rel="noreferrer">
                             <img src="linkedIn.png" alt="LinkedIn" />
                             <span className="btnName">LinkedIn</span>
                         </a>
@@ -96,13 +96,13 @@ export const Sidebar = (props) => {
                 </div>
                 <div className="footer">
                     <div className="menu">
-                        <a href="https://github.com/PMR745" target='_blank'>
+                        <a href="https://github.com/PMR745" target='_blank' rel="noreferrer">
                             <img src="git.png" alt="github" />
                             <span className="btnName">Github</span>
                         </a>
                     </div>
                     <div className="menu">
-                        <a href="https://www.linkedin.com/in/prathamesh-rajput-b75458218/" target='_blank'>
+                        <a href="https://www.linkedin.com/in/prathamesh-rajput-b75458218/" target='_blank' rel="noreferrer">
                             <img src="linkedIn.png" alt="LinkedIn" />
                             <span className="btnName">LinkedIn</span>
                         </a>
