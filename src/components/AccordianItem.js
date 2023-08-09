@@ -6,6 +6,10 @@ import { useEffect, useRef } from 'react'
 
 export const AccordianItem = (props) => {
 
+    const unitsp = ["Unit-1", "Unit-2", "Unit-3", "Unit-4", "Unit-5", "Practical"];
+    const units = ["Unit-1", "Unit-2", "Unit-3", "Unit-4", "Unit-5"];
+    const subjects = ["DBMS", "Web Development", "SEPM", "Cloud Computing", "Compiler Design"];
+
     const parentRef = useRef(null);
 
     useEffect(() => {
@@ -15,24 +19,36 @@ export const AccordianItem = (props) => {
     }, [parentRef])
 
     if (props.page === 0) {
-        return (
-            <div className='accordianItem'>
-                <div className="inner-accordian" ref={parentRef}>
-                    <Row unitName="Unit-1" page={props.page} subjectName={props.subjectName} />
-                    <Row unitName="Unit-2" page={props.page} subjectName={props.subjectName} />
+        if (props.subjectName == "Compiler Design") {
+            return (
+                <div className='accordianItem'>
+                    <div className="inner-accordian" ref={parentRef}>
+                        {units.map(unit => (
+                            <Row unitName={unit} page={props.page} subjectName={props.subjectName} />
+                        ))}
+                    </div>
                 </div>
-            </div>
-        )
+            )
+        }
+        else {
+            return (
+                <div className='accordianItem'>
+                    <div className="inner-accordian" ref={parentRef}>
+                        {unitsp.map(unit => (
+                            <Row unitName={unit} page={props.page} subjectName={props.subjectName} />
+                        ))}
+                    </div>
+                </div>
+            )
+        }
     }
     else if (props.page === 1) {
         return (
             <div className='accordianItem'>
                 <div className="inner-accordian" ref={parentRef}>
-                    <Row unitName="Unit-1" page={props.page} subjectName={props.subjectName} />
-                    <Row unitName="Unit-2" page={props.page} subjectName={props.subjectName} />
-                    <Row unitName="Unit-3" page={props.page} subjectName={props.subjectName} />
-                    <Row unitName="Unit-4" page={props.page} subjectName={props.subjectName} />
-                    <Row unitName="Unit-5" page={props.page} subjectName={props.subjectName} />
+                    {
+                        units.map(unit => (<Row unitName={unit} page={props.page} subjectName={props.subjectName} />))
+                    }
                 </div>
             </div>
         )
@@ -41,11 +57,7 @@ export const AccordianItem = (props) => {
         return (
             <div className='accordianItem'>
                 <div className="inner-accordian" ref={parentRef}>
-                    <Row unitName="DBMS" page={props.page} subjectName={props.subjectName} />
-                    <Row unitName="Web Development" page={props.page} subjectName={props.subjectName} />
-                    <Row unitName="SEPM" page={props.page} subjectName={props.subjectName} />
-                    <Row unitName="Cloud Computing" page={props.page} subjectName={props.subjectName} />
-                    <Row unitName="Compiler Design" page={props.page} subjectName={props.subjectName} />
+                    {subjects.map(subject => (<Row unitName={subject} page={props.page} subjectName={props.subjectName} />))}
                 </div>
             </div>
         )

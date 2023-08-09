@@ -207,6 +207,11 @@ nav {
   text-align: center;
 }
 
+.linkElement a {
+  text-decoration: none;
+  color: #030303;
+}
+
 @media screen and (max-width: 500px) {
   nav {
     font-size: 20px;

@@ -1,7 +1,30 @@
 import React from 'react'
 import { Element } from './Element'
+import { LinkElement } from './LinkElement'
 
 export const InnerRow = (props) => {
+
+    const ndbmsp = [
+        { name: "Lab Manual", link: "https://drive.google.com/file/d/1sCWZCpjWIy2zjx4k2M_vjIYlq8YXYKdi/view?usp=sharing" }
+    ]
+
+    const nwdp = [
+        {
+            name: "Lab Manual", link: "https://drive.google.com/file/d/1i8p7UbTZWxNNnaPV5z9HjP4tmOW1q8x0/view?usp=sharing"
+        }
+    ]
+
+    const nccp = [
+        {
+            name: "Lab Manual", link: "https://drive.google.com/file/d/12CJfleVw303ld2dwMhUfspb3q4-NBOA7/view?usp=sharing"
+        }
+    ]
+
+    const nsepmp = [
+        {
+            name: "Lab Manual", link: "https://drive.google.com/file/d/137lsG-k6MnlUI3R7-KgWkhKh3HEYsIA4/view?usp=sharing"
+        }
+    ]
 
     const dbms1 = ["Introduction to DBMS - DBMS Architecture", "Data Models", "E-R Diagram", "Relational Database Design"];
 
@@ -39,7 +62,7 @@ export const InnerRow = (props) => {
 
     const cd4 = ["Intermediate code generation: Intermediate languages", "Design issues", "Translation of different language features", "different types of intermediate forms", "Error Handling and Recovery in Syntax Analyzer", "YACC-Design of a syntax Analyzer for a Sample Language.",]
 
-    const cd5 = ["Principal Sources of Optimization-DAG- Optimization of Basic Blocks-Global Data Flow Analysis-Efficient Data Flow Algorithms-Issues in Design of a Code Generator - A Simple Code Generator Algorithm. Recent trends and Compiler tools", "advanced topics & its Application. Virtual Machines and Interpretation Techniques", "Just-In-Time (JIT) and Adaptive Compilation."]
+    const cd5 = ["Principal Sources of Optimization", "DAG- Optimization of Basic Blocks", "Global Data Flow Analysis", "Efficient Data Flow Algorithms", "Issues in Design of a Code Generator", "A Simple Code Generator Algorithm", "Recent trends and Compiler tools", "advanced topics & its Application", "Virtual Machines and Interpretation Techniques", "Just-In-Time (JIT) and Adaptive Compilation."]
 
     const cc1 = ["Overview", "Applications", "Intranets and the Cloud. Your Organization and Cloud Computing- Benefits", "Limitations", "Security Concerns.  Software as a Service (SaaS)- Understanding the Multitenant Nature of SaaS Solutions", "Understanding SOA.   Platform as a Service (PaaS)-IT Evolution Leading to the Cloud", "Benefits of Paas Solutions", "Disadvantages of PaaS Solutions.  Infrastructure as a Service (IaaS)-Understanding IaaS", "Improving Performance through Load Balancing", "System and Storage Redundancy", "Utilizing Cloud-Based NAS Devices", "Advantages", "Server Types. Identity as a Service (IDaaS)"]
 
@@ -52,9 +75,75 @@ export const InnerRow = (props) => {
     const cc5 = ["Introduction and architecture for federated cloud computing", "Performance prediction for HPC on Cloud. SLA management: Types of SLA", "Life cycle of SLA", "Traditional approaches of SLA. Management responsibilities", "lifecycle management", "cloud management products", "Cloud management standards",]
 
     if (props.page === 0) {
-        return (
-            <Element element="First" />
-        )
+        if (props.subjectName === "DBMS") {
+            switch (props.unitName) {
+                case "Practical":
+                    return (
+                        <>
+                            {
+                                ndbmsp.map(topic => <LinkElement element={topic.name} key={topic.name} link={topic.link} />)
+                            }
+                        </>
+                    )
+                default:
+                    return (
+                        <LinkElement element="Comming Soon" link="" />
+                    )
+            }
+        }
+        else if (props.subjectName === "Web Development") {
+            switch (props.unitName) {
+                case "Practical":
+                    return (
+                        <>
+                            {
+                                nwdp.map(topic => <LinkElement element={topic.name} key={topic.name} link={topic.link} />)
+                            }
+                        </>
+                    )
+                default:
+                    return (
+                        <LinkElement element="Comming Soon" link="" />
+                    )
+            }
+        }
+        else if (props.subjectName === "SEPM") {
+            switch (props.unitName) {
+                case "Practical":
+                    return (
+                        <>
+                            {
+                                nsepmp.map(topic => <LinkElement element={topic.name} key={topic.name} link={topic.link} />)
+                            }
+                        </>
+                    )
+                default:
+                    return (
+                        <LinkElement element="Comming Soon" link="" />
+                    )
+            }
+        }
+        else if (props.subjectName === "Cloud Computing") {
+            switch (props.unitName) {
+                case "Practical":
+                    return (
+                        <>
+                            {
+                                nccp.map(topic => <LinkElement element={topic.name} key={topic.name} link={topic.link} />)
+                            }
+                        </>
+                    )
+                default:
+                    return (
+                        <LinkElement element="Comming Soon" link="" />
+                    )
+            }
+        }
+        else {
+            return (
+                <LinkElement element="Comming Soon" link="#" />
+            )
+        }
     }
     else if (props.page === 1) {
         if (props.subjectName === "DBMS") {
