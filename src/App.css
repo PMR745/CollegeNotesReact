@@ -129,7 +129,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: calc(100vw - 90px)
+  width: 90vw;
 }
 
 .dept {
@@ -307,7 +307,7 @@ nav {
   }
 
   .container {
-    width: calc(100vw - 50px);
+    width: 90vw;
   }
 
   .accordian {
