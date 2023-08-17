@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
-import { faUserPlus } from '@fortawesome/free-solid-svg-icons'
 
 export const AddBtn = (props) => {
 
@@ -41,16 +40,16 @@ export const AddBtn = (props) => {
                         {
                             isToggle && (
                                 <div className="toggle">
-                                    <div className='menu-element' onClick={handleSyllabusClick}>
+                                    <div className='menu-element custom-btn' onClick={handleSyllabusClick}>
                                         Syllabus
                                     </div>
-                                    <div className='menu-element' onClick={handlePapersClick}>
+                                    <div className='menu-element custom-btn' onClick={handlePapersClick}>
                                         Papers
                                     </div>
                                 </div>
                             )
                         }
-                        <div className="btn" onClick={handleClick}>
+                        <div className="custom-btn btn-2" onClick={handleClick}>
                             <FontAwesomeIcon icon={faXmark} />
                         </div>
                     </div>
@@ -63,7 +62,7 @@ export const AddBtn = (props) => {
             return (
                 <div className='addBtn'>
                     <div className="add-wrapper">
-                        <div className="btn" onClick={handleClick}>
+                        <div className="custom-btn btn-2" onClick={handleClick}>
                             <FontAwesomeIcon icon={faPlus} />
                         </div>
                     </div>
@@ -81,16 +80,16 @@ export const AddBtn = (props) => {
                         {
                             isToggle && (
                                 <div className="toggle">
-                                    <div className='menu-element' onClick={handleNotesClick}>
+                                    <div className='menu-element custom-btn' onClick={handleNotesClick}>
                                         Notes
                                     </div>
-                                    <div className='menu-element' onClick={handlePapersClick}>
+                                    <div className='menu-element custom-btn' onClick={handlePapersClick}>
                                         Papers
                                     </div>
                                 </div>
                             )
                         }
-                        <div className="btn" onClick={handleClick}>
+                        <div className="custom-btn btn-2" onClick={handleClick}>
                             <FontAwesomeIcon icon={faXmark} />
                         </div>
                     </div>
@@ -103,7 +102,7 @@ export const AddBtn = (props) => {
             return (
                 <div className='addBtn'>
                     <div className="add-wrapper">
-                        <div className="btn" onClick={handleClick}>
+                        <div className="custom-btn btn-2" onClick={handleClick}>
                             <FontAwesomeIcon icon={faPlus} />
                         </div>
                     </div>
@@ -121,16 +120,16 @@ export const AddBtn = (props) => {
                         {
                             isToggle && (
                                 <div className="toggle">
-                                    <div className='menu-element' onClick={handleNotesClick}>
+                                    <div className='menu-element custom-btn' onClick={handleNotesClick}>
                                         Notes
                                     </div>
-                                    <div className='menu-element' onClick={handleSyllabusClick}>
+                                    <div className='menu-element custom-btn' onClick={handleSyllabusClick}>
                                         Syllabus
                                     </div>
                                 </div>
                             )
                         }
-                        <div className="btn" onClick={handleClick}>
+                        <div className="custom-btn btn-2" onClick={handleClick}>
                             <FontAwesomeIcon icon={faXmark} />
                         </div>
                     </div>
@@ -143,7 +142,7 @@ export const AddBtn = (props) => {
             return (
                 <div className='addBtn'>
                     <div className="add-wrapper">
-                        <div className="btn" onClick={handleClick}>
+                        <div className="custom-btn btn-2" onClick={handleClick}>
                             <FontAwesomeIcon icon={faPlus} />
                         </div>
                     </div>
