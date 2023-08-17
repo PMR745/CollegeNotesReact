@@ -358,6 +358,10 @@ nav {
     font-size: 15px;
     padding: 5px 8px;
   }
+
+  .blur .menu-element {
+    animation: opacity 0.2s linear;
+  }
 }
 
 @keyframes opacity {
