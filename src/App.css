@@ -238,7 +238,7 @@ nav {
 }
 
 .btn {
-  background-color: #fff;
+  background-color: #7000d3;
   height: 60px;
   width: 60px;
   border-radius: 50%;
@@ -247,15 +247,16 @@ nav {
   align-items: center;
   cursor: pointer;
   font-size: 25px;
+  color: #fff;
 }
 
 .btn:active {
-  animation: rotate 0.5s linear;
+  animation: rotate 0.2s linear;
 }
 
 .menu-element {
-  background-color: #fff;
-  color: #000;
+  background-color: #7100d3;
+  color: #fff;
   margin: 22px 0;
   padding: 15px 50px;
   width: 80px;
