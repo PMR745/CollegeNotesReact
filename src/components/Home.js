@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { NavBar } from './NavBar'
 import { Container } from './Container'
-import { Sidebar } from './Sidebar'
+// import { Sidebar } from './Sidebar'
 import { Syllabus } from './Syllabus'
 import { Papers } from './Papers'
+import { AddBtn } from './AddBtn'
 
 
 export const Home = () => {
@@ -18,7 +19,8 @@ export const Home = () => {
             <div >
                 <NavBar />
                 <Container />
-                <Sidebar parentCallBack={handleCallBack} />
+                <AddBtn parentCallBack={handleCallBack} />
+                {/* <Sidebar parentCallBack={handleCallBack} /> */}
             </div>
         )
     }
@@ -27,7 +29,8 @@ export const Home = () => {
             <div>
                 <NavBar />
                 <Syllabus />
-                <Sidebar parentCallBack={handleCallBack} />
+                <AddBtn parentCallBack={handleCallBack} />
+                {/* <Sidebar parentCallBack={handleCallBack} /> */}
             </div>
         )
     }
@@ -36,7 +39,8 @@ export const Home = () => {
             <div>
                 <NavBar />
                 <Papers />
-                <Sidebar parentCallBack={handleCallBack} />
+                <AddBtn parentCallBack={handleCallBack} />
+                {/* <Sidebar parentCallBack={handleCallBack} /> */}
             </div>
         )
     }

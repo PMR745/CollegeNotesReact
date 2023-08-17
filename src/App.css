@@ -212,6 +212,66 @@ nav {
   color: #030303;
 }
 
+/* Add Button */
+.addBtn {
+  background-color: rgba(0, 0, 0, 0.486);
+  position: absolute;
+  top: 0;
+}
+
+.blur {
+  height: 100vh;
+  max-width: 100vw;
+
+}
+
+.add-wrapper {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  width: 100px;
+}
+
+.btn {
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.btn:active {
+  animation: rotate 0.5s linear;
+}
+
+.menu-element {
+  background-color: #fff;
+  color: #000;
+  margin: 22px 0;
+  padding: 15px 50px;
+  width: 80px;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.blur .menu-element {
+  animation: opacity 0.5s linear;
+}
+
 @media screen and (max-width: 500px) {
   nav {
     font-size: 20px;
@@ -279,5 +339,45 @@ nav {
   .innerRow {
     margin-left: 10%;
     width: 75%;
+  }
+
+  .add-wrapper {
+    right: 0px;
+    bottom: 30px;
+    width: 80px;
+  }
+
+  .btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .menu-element {
+    width: 70px;
+    height: 30px;
+    font-size: 15px;
+    padding: 5px 8px;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(160deg);
   }
 }
