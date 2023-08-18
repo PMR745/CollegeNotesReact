@@ -15,4 +15,5 @@ Project Link: https://pmr745.github.io/CollegeNotesReact/
    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> 
+  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Dcss%2BLogo&psig=AOvVaw1Ib0C4IMYWSGnXhCa7SOan&ust=1692458611670000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKj9yOTB5oADFQAAAAAdAAAAABAJ" alt="javascript" width="40" height="40"/> 
 </p>
