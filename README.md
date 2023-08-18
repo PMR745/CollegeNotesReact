@@ -1,4 +1,4 @@
-# Real Time College Notes with React
+# College Notes with React
 
 Project Link: https://pmr745.github.io/CollegeNotesReact/
 
